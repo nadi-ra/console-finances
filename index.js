@@ -90,4 +90,9 @@ var finances = [
 // The total number of months included in the dataset.
  console.log("Financial Analysis")
  console.log("----------------")
+ var monthsTotal = finances.length
+ console.log("Total Months:" + monthsTotal)
  
+//  The net total amount of Profit/Losses over the entire period.
+ console.log()
+
