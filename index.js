@@ -88,11 +88,17 @@ var finances = [
 ];
 
 // The total number of months included in the dataset.
- console.log("Financial Analysis")
- console.log("----------------")
+ console.log("Financial Analysis");
+ console.log("----------------");
  var monthsTotal = finances.length
- console.log("Total Months:" + monthsTotal)
+ console.log("Total Months:" + monthsTotal);
  
 //  The net total amount of Profit/Losses over the entire period.
- console.log()
-
+  var profitSum = 0
+ for (let i = 0; i < finances.length; i++) {
+  for (let j = 1; j < finances[i].length; j++) {
+     profitSum += finances[i][j]
+  }
+  
+ }
+ console.log("Total: $" + profitSum);
