@@ -102,3 +102,16 @@ var finances = [
   
  }
  console.log("Total: $" + profitSum);
+
+//  The average of the changes in Profit/Losses over the entire period.
+
+//  You will need to track what the total change in Profit/Losses are from month to month and then find the average.
+var digits = finances.map(x => x[1]);
+var total = 0;
+for (let i = 1; i < digits.length; i++) {
+ 
+  total += (digits[i] - digits[i-1])
+}
+// (Total/(Number of months - 1)
+var averageChange = total / (finances.length - 1);
+console.log("Average Change: " + averageChange.toFixed(2));
