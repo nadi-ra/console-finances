@@ -113,5 +113,5 @@ for (let i = 1; i < digits.length; i++) {
   total += (digits[i] - digits[i-1])
 }
 // (Total/(Number of months - 1)
-var averageChange = total / (finances.length - 1);
+var averageChange = total / (monthsTotal - 1);
 console.log("Average Change: " + averageChange.toFixed(2));
