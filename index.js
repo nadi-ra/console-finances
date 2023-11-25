@@ -122,3 +122,8 @@ var max = Math.max(...digits);
 var maxChange = max - digits[digits.indexOf(max) - 1];
 var maxDate = finances[digits.indexOf(max)][0];
 console.log("Greatest Increase in Profits/Losses: " + maxDate + "($" + maxChange + ")");
+// The greatest decrease in Profit/Losses (date and amount) over the entire period.
+var min = Math.min(...digits);
+var minChange = min - digits[digits.indexOf(min) - 1];
+var minDate = finances[digits.indexOf(min)][0];
+console.log("Greatest Decrease in Profits/Losses: " + minDate + "($" + minChange +")");
