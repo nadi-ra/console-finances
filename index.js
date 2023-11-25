@@ -115,3 +115,10 @@ for (let i = 1; i < digits.length; i++) {
 // (Total/(Number of months - 1)
 var averageChange = total / (monthsTotal - 1);
 console.log("Average Change: " + averageChange.toFixed(2));
+
+// The greatest increase in Profit/Losses (date and amount) over the entire period.
+var max = Math.max(...digits);
+// console.log(digits.indexOf(max)); This is used to find index of max number in digits array.
+var maxChange = max - digits[digits.indexOf(max) - 1];
+var maxDate = finances[digits.indexOf(max)][0];
+console.log("Greatest Increase in Profits/Losses: " + maxDate + "($" + maxChange + ")");
