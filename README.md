@@ -5,3 +5,5 @@ This repo contains a simple HTML file and a JavaScript file that initially conat
 
 ## Usage
 All the code used to analyse the dataset is dispalyed in the console of the web browser (preferably Chrome). In order to view it you would need to open the HTML file in a web browser. Then right-click in the web browser and select inspect. Once a tab appers select console to view the JavaScript running. below is a screenshot of what you will see.
+
+![alt text](assets/images/Screenshot%202023-11-25%20163409.png)
